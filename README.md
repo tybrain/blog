@@ -1,8 +1,8 @@
 vida
 ---------
 
-vida is a simple and beautiful jekyll theme.
-You can see demo [here](http://syaning.com/vida/).
+This blog is forked from Alex Sun's vida
+You can see the original author's blog here [here](http://syaning.com/vida/).
 
 ### License
 
