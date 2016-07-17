@@ -1,5 +1,5 @@
 permalink:           pretty
-relative_permalinks: false
+#relative_permalinks: false
 
 # Setup
 title:               AAA
@@ -8,6 +8,10 @@ description:         'dd'
 url:                 
 baseurl:             ''
 paginate:            5
+
+kramdown:
+  input: GFM
+
 
 # About/contact
 author:
