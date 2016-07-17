@@ -1,5 +1,6 @@
 title: vida
 baseurl: "/vida"
+relative_permalinks: false
 
 date_format: "%Y-%m-%d"
 
