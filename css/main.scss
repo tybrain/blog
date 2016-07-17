@@ -4,7 +4,7 @@
 
 @charset "utf-8";
 
-$base-font-family: Cantarell, Arial, Helvetica, sans-serif;
+$base-font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  0.875rem;
 $base-line-height: 1.5;
@@ -14,7 +14,7 @@ $link-color:   #0074d9;
 $meta-color:   #a0a0a0;
 $border-color: #ddd;
 
-@import url(http://fonts.googleapis.com/css?family=Cantarell:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Lucida:400,400italic,700);
 @import "color";
 @import "base";
 @import "layout";
