@@ -4,8 +4,6 @@ title:     About
 permalink: /about/
 ---
 
-Vida is a minimalist jekyll theme.
+This blog records some random write-ups.
 
-- Author: Alex Sun
-- Email:  syaningv@gmail.com
-- Github: [https://github.com/syaning/vida](https://github.com/syaning/vida)
+
