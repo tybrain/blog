@@ -35,8 +35,8 @@ They are a bit different from min_element/max_element in that they require the c
 
 In this example, the lower bound is 7, upper bound is 9. The quick way to think of this: in terms of the comparison function, we map the container into a list of boolean:
 
-- lower_bound is the first F counting from right in this list
-- upper_bound is the first F (and not equal val) counting from right in this list
+- lower_bound is the first F, and there should be no T to the right;
+- upper_bound is the first F (and not val ), and there should be no T to the right.
 
 For a sorted list in ascending order, if val is in the container, lower_bound points to the first val and upper_bound points to the first item greater than val. [lower_bound, upper_bound) is essentially the range of repetition of val. These methods are sometimes very handy.
 
@@ -62,8 +62,9 @@ partition arranges the list such that the list is put into two groups by the tes
 
 ```c++
 // v = { 1,4,5,3,9,8,2,6},  n = 4
-auto p = partition( v.begin(), v.end(), [](auto a){ return a <= 4; });  // v = { 1,4,2,3,9,8,5,6} unstable 
-p = stable_partition( v.begin(), v.end(), [](auto a){ return a <= 4; });  // v = { 1,4,3,2,5,9,8,6} stable 
+auto com = [](auto a){ return a <= 4; }; 
+auto p = partition( v.begin(), v.end(), com );  // v = { 1,4,2,3,9,8,5,6} unstable 
+p = stable_partition( v.begin(), v.end(), com );  // v = { 1,4,3,2,5,9,8,6} stable 
 std::cout << *p << "\n";  // 5
 ```
 
