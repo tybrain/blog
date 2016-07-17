@@ -1,15 +1,19 @@
-title: vida
-baseurl: ""
+permalink:           pretty
 relative_permalinks: false
 
-date_format: "%Y-%m-%d"
+# Setup
+title:               AAA
+tagline:             'A Jekyll theme'
+description:         'dd'
+url:                 
+baseurl:             ''
+paginate:            5
 
-# Build settings
-kramdown:
-  input: GFM
-permalink: pretty
+# About/contact
+author:
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
-# Third-party services
-# just leave someone empty to disable it
-google_analytics:
-disqus_shortname:
+# Custom vars
+version:             1.0.0
