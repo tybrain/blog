@@ -1,6 +1,7 @@
 title: Tiny Brain
 baseurl: ""
 date_format: "%Y-%m-%d"
+url: "https://tybrain.github.io"
 
 # Build settings
 kramdown:
