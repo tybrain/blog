@@ -1,12 +1,12 @@
 @charset "utf-8";
 main {
-    max-width: 48rem;
+    max-width: 56rem;
     margin: 0 auto 3rem;
     padding: 0 2rem;
 }
 .site-header {
     .site-title {
-        font-weight: 300;
+        font-weight: 200;
         > a {
             color: $text-color;
             text-decoration: none;
