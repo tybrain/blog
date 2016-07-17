@@ -1,4 +1,4 @@
-vida
+---
 ---------
 
 This blog is forked from Alex Sun's vida
