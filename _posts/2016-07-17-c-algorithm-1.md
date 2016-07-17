@@ -56,3 +56,81 @@ std:rotate(it1, it, it2);  //  { 4, 5, 6, 1, 2, 3, 7, 8, 9}
 ```
 
 
+### partition
+
+partition arranges the list such that the list is put into two groups by the test function, {T,T,T,..T, F,F,...F}, with n Ts followed by (N-n) Fs. It returns the iterator at the first F.
+
+```c++
+// v = { 1,4,5,3,9,8,2,6},  n = 4
+auto p = partition( v.begin(), v.end(), [](auto a){ return a <= 4; });  // v = { 1,4,2,3,9,8,5,6} unstable 
+p = stable_partition( v.begin(), v.end(), [](auto a){ return a <= 4; });  // v = { 1,4,3,2,5,9,8,6} stable 
+std::cout << *p << "\n";  // 5
+```
+
+### nth_element
+
+A related method to the partition method, which achieves the similar functionality. 
+
+```c++
+// v = { 1,4,5,3,9,8,2,6},  n = 4
+std::nth_element( v.begin(), v.begin()+4, v.end() );  // v = { 3,2,1,4,5,6,8,9} unstable 
+```
+
+### random_shuffle
+
+Shuffle the elements in the range given.
+
+```c++
+std::random_shuffle( v.begin(), v.end() );
+```
+
+### inplace_merge
+
+Merge sort two consequtive sorted trunks of a list in place. 
+
+```c++
+// v = { 1,3,5,7,9, 2,4,6,8,10,12}
+std::inplace_merge(v.begin(), v.begin()+5, v.end() ); // v={1,2,3,4,5,6,7,8,9,10,12}
+```
+
+### copy
+
+copy(source_begin, source_end, destination_begin)
+
+```c++
+// v = {1,2,3,4,5,6,7,8,9}
+std::copy( v.begin() + 2, v.end(), v.begin() );  // v={3,4,5,6,7,8,9,8,9}
+// a different way to output result, copy to cout stream
+std::copy( v.begin(), v.end(), ostream_iterator<int>("cout", " "));  
+
+```
+
+### accumulate 
+
+```c++
+// v = {1,2,3,4,5}
+int init_value = 3
+std::accumulate( v.begin(), v.end(), init_value ); //18
+```
+
+### heap related methods 
+
+**push_heap, pop_heap, sort_heap**
+
+push_heap(RanIt_begin, RanIt_cur) inserts *RanIt_cur in heap, assuming [RanIt_begin, RanIt_cur-1] is a heap;
+pop_heap(RanIt_begin, RanIt_end) move *RanIt_begin to *(RanIt_end-1), then heapify
+
+```c++
+// v = { 2,4,6,8,1,3,5,7,9}
+for( auto it = v.begin(); it != v.end(); ) {
+	std::push_heap(v.begin(), ++it );  
+} 
+// v = {9,8,5,7,1,3,4,2,6}
+
+for( auto it = v.end(); it != v.begin(); ) {
+	std::pop_heap(v.begin(), it-- );
+}
+// v = {1,2,3,4,5,6,7,8,9}, same as what after sort_heap()
+```
+
+
