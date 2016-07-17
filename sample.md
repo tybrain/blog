@@ -1,14 +1,25 @@
 ---
 layout:    page
-title:     Sample
+title:     Quick Reference
 permalink: /sample/
 ---
 
 Vida is a simple and beautiful jekyll theme, it has only the essential functions
 so that you can concentrate on the content of your blog.
 
-First of all, let's have a glance at the basic styles: [link](http://github.com/syaning/vida),
+First of all, let's have a glance at the basic styles: `**string**` [link](http://github.com/syaning/vida),
 **strong**, *italic*, <del>deletion</del>, <ins>insertion</ins>.
+
+- **strong** : `**string**`
+- *italic*: `*italic`
+- <del>deletion</del> : `<del>deletion</del>`
+- <ins>insertion</ins>: `<ins>insertion</ins>`
+- [link](https://tybrain.github.io) : `[link](https://tybrain.github.io)`
+- Header: `##Header`
+- list: `- item `
+- list 123: `1. item`
+- quote: `> Trust is the mother of conceive`
+- image: `![](/image/some_image.jpg)`
 
 ### Headers:
 
