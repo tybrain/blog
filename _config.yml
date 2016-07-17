@@ -1,5 +1,5 @@
 title: vida
-baseurl: "/vida"
+baseurl: "https:/tybrain.github.io/"
 relative_permalinks: false
 
 date_format: "%Y-%m-%d"
