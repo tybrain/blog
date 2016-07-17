@@ -6,7 +6,7 @@ title:               AAA
 tagline:             'A Jekyll theme'
 description:         'dd'
 url:                 
-baseurl:             ''
+baseurl:             '/blog/'
 paginate:            5
 
 kramdown:
